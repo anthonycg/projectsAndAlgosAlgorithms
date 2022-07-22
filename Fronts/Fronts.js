@@ -18,8 +18,18 @@ class SLL {
         this.head = newNode;
         return this.head;
     }
+    removeFront() {
+        let deletedNode = this.head
+        this.head = deletedNode.next
+        deletedNode = null
+        return this.head
+    }
  }
 
 let newSLL = new SLL();
 newSLL.addFront(45)
+newSLL.addFront(34)
+newSLL.removeFront()
 console.log(newSLL)
+
+
