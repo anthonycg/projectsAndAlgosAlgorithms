@@ -25,12 +25,7 @@ class SLL {
         return this.head
     }
     returnFrontValue() {
-        if (this.head == null) {
-            return null
-        } else {
-
-            return this.head.value
-        }
+        return this.head == null ? null : this.head.value;
     }
  }
 
@@ -38,7 +33,6 @@ let newSLL = new SLL();
 newSLL.addFront(45)
 newSLL.addFront(34)
 newSLL.addFront(36)
-newSLL.removeFront()
 newSLL.removeFront()
 newSLL.removeFront()
 console.log(newSLL.returnFrontValue())
