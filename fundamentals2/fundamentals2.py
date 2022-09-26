@@ -15,3 +15,15 @@ sigma(5)
 # product (multiplication) of all positive integers from 1 up to number (inclusive). 
 
 # For example, factorial(3) = 6 (or 1 * 2 * 3); factorial(5) = 120 (or 1 * 2 * 3 * 4 * 5).
+
+def factorial(number):
+    totalProduct = 1
+    if number == 0:
+        totalProduct = 0
+    for num in range(1,number+1):
+        totalProduct *= num
+    print(totalProduct)
+
+factorial(5)
+factorial(3)
+factorial(0)
