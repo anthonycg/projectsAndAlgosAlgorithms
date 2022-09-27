@@ -60,6 +60,13 @@ def drawLeftStars(numberOfStars):
 
 drawLeftStars(3)
 
+def drawRightStars(number):
+    finalString = ''
+    for num in range(75):
+        finalString += '_'
+    print(finalString)
+
+drawRightStars(5)
 
 
 # Character Art
